@@ -7,7 +7,7 @@ const AboutGTP = (props, context) => {
     return (
 
         <main className="about_gtp_content">
-            <div className="title">About Yash GTP</div>
+            <div className="title"><p>About Yash GTP</p></div>
             <div className="about_gtp_heading">
                 Description
             </div>

@@ -3,12 +3,41 @@
 /* Author:  */
 
 
+.title p::before
+{
+    content: '';
+    height: .05em;
+    width: 1.5em;
+    background: #ac0f02;
+    position: absolute;
+    left: -1.5em;
+    top: 2.15em;
+}
+
+.title
+{
+    /*have this bump left and the page wrapper be full-width*/
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 53px;
+    color: #002e48;
+    position: relative;
+}
+
 .about_gtp_content {
-    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
     border: 1px solid black;
     margin-top: 10%;
     padding-left: 10em;
     padding-right: 10em;
+    background-image: url(https://www.yash.com/wp-content/themes/Yash/images/ser-content-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: contain;
 }
 
 .about_gtp_heading
@@ -23,6 +52,7 @@
 {
     color: #3e6174;
     text-align: left;
+    line-height:1.8;
 }
 
 .about_gtp_list ul li
