@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Aux from '../Aux/Aux';
+import Sec from '../Sec/Sec';
 import Nav from '../../components/Nav/Nav';
 import AboutGTP from '../../pages/AboutGTP/AboutGTP';
 import TraineeWork from '../../pages/TraineeWork/TraineeWork';
@@ -15,7 +15,7 @@ class Layout extends Component {
 
     render() {
         return (
-            <Aux>
+            <Sec>
                 <header>
                     <Nav />
                 </header>
@@ -29,7 +29,7 @@ class Layout extends Component {
                 <footer>
                     <Footer />
                 </footer>
-            </Aux>
+            </Sec>
         )
     }
 }
