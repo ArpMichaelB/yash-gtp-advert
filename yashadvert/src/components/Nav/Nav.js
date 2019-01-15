@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { toElement as scrollToElement } from '../../utils/scroll';
-import Aux from '../../hoc/Aux/Aux';
+import Sec from '../../hoc/Sec/Sec';
 
 import './style.css';
 
@@ -43,7 +43,7 @@ render() {
     const stickyClass = this.state.isSticky ? 'sticky' : '';
     
     return (
-        <Aux>
+        <Sec>
         <nav
             className={stickyClass}
             ref={(elem) => {
@@ -70,7 +70,7 @@ render() {
             Whats Next
         </div>
     </nav>
-    </Aux>
+    </Sec>
     );
     }
 
