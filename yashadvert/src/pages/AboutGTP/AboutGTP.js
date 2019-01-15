@@ -8,6 +8,7 @@ const AboutGTP = (props, context) => {
 
         <main className="about_gtp_content">
             <div className="title">About Yash GTP</div>
+            {/* the about div is gonna go here, full of paragraph tags */}
         </main>
     )
 }
