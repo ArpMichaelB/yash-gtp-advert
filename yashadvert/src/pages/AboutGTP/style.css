@@ -1,0 +1,10 @@
+/* Custom CSS For AboutGTP Section */
+
+/* Author:  */
+
+
+.about_gtp_content {
+    height: 100vh;
+    border: 1px solid black;
+    margin-top: 10%;
+}

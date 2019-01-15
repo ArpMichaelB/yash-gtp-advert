@@ -1,0 +1,10 @@
+/* Custom CSS For WhatsNext Section */
+
+/* Author:  */
+
+
+.whats_next_content {
+    height: 100vh;
+    border: 1px solid black;
+    margin-top: 10%;
+}
