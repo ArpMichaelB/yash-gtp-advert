@@ -34,7 +34,10 @@
 }
 
 .work_box_big {
-    width: 90%;
+    width: 50%;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
     min-height: 25vh;
     padding: 5px;
     height:auto;
@@ -44,6 +47,8 @@
     width: 12rem;
     height: 10rem;
     margin: auto;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .work_box_big p{
