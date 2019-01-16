@@ -19,10 +19,9 @@ class TraineeWork extends React.Component {
         let awsDesc = "Trainees learned the major aws services, S3 buckets, EC2 instances, and account management. Trainned created apps that edit images in S3 buckets, both inside and outside an EC2 instance."
         let hibernateDesc = "The trainees learned Hibernate in order to make their java applications with databases much smoother to develop.  Using Hibernate, the trainees re-made the applications they had made earlier in the training, but much faster and smoother, as well as improving them along the way."
         let reactDesc = "After a small session of learning Javascript and HTML, the trainees learned React Js.  With the knowledge of both front-end and back-end, the trainees developed personal full-scale applications with their newfound full-stack skills."
-
         return (
             <main className="trainee_work_content">
-                <div className="title">Trainee Work</div>
+                <div className="title"><p>Trainee Work</p></div>
                 <Tile image={<img src={spring} alt="Spring" />} desc={springDesc}/>
                 <Tile image={<img src={java} alt="Java" />} desc={javaDesc}/>
                 <Tile image={<img src={sql} alt="SQL" />} desc={sqlDesc}/>
