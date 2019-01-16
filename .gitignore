@@ -33,3 +33,4 @@ gradlew
 build/
 /yashadvert
 !/yashadvert/src/
+!/yashadvert/public/
