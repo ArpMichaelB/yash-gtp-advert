@@ -7,4 +7,21 @@
     height: 100vh;
     border: 1px solid black;
     margin-top: 10%;
+    display: flex;
+    flex-flow: column wrap;
 }
+
+  .w-100 {
+    width: 50%!important
+  }
+  .d-block {
+      display: inline!important;
+  }
+
+  .carousel-control-next, .carousel-control-prev{
+      background-color: gray;
+  }
+
+  .carousel-indicators li {
+      background-color: gray;
+  }
