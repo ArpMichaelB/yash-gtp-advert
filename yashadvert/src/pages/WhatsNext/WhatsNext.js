@@ -12,7 +12,7 @@ const WhatsNext = (props, context) => {
     
     return (
         <main className="whats_next_content">
-            <span className="title">Whats Next?</span>
+            <span className="title"><p>Whats Next?</p></span>
         
 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
   <ol className="carousel-indicators">
