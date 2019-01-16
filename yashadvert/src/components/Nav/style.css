@@ -1,34 +1,77 @@
 nav {
+    position: fixed;
+    display: inline-flex;
+    justify-content: flex-end;
+    top: 0;
     right: 0;
     left: 0;
+    border-width: 0 0 1px;
     z-index: 1030;
-    width: 100%;
     min-height: 50px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.7s;
+    border: 1px solid transparent;
+    background: #FFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
-.menu {
-    margin-right: 1rem;
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
+.logo {
+    width: 20%;
 }
 
-.menu__item {
-    padding: 0.25rem;
-    margin: 0 1rem;
-    font-size: 1.25rem;
-    font-weight: 400;
-    border-bottom: 2px solid transparent;
-}
-
-.menu__item:hover {
-    cursor: pointer;
-}
-
-.react-icon {
-    vertical-align: middle;
-}
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      width: 80%;
+  }
+  
+  li {
+      color: #000;
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #000;
+  }
+  
+  li:hover {
+      cursor: pointer;
+  }
+  
+  ul li ul {
+      background: #fff;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+      position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul, /* this is the line we add */
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
+  }

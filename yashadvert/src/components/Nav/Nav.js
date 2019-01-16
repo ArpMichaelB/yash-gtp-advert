@@ -44,13 +44,33 @@ render() {
     
     return (
         <Sec>
-        <nav
+          <nav 
+          className={stickyClass}
+          ref={(elem) => {
+              this.nav = elem;
+          }}
+          role="navigation">
+
+  <div className="logo">Logo</div>
+  <ul>
+    <li onClick="">Digital Transformation</li>
+    <li onClick="#">IT Outsourcing
+    
+    </li>
+    <li onClick="#">Technology</li>
+    <li onClick="#">Industries</li>
+    <li onClick="#">Resources</li>
+    <li onClick="#">Career</li>
+  </ul>
+</nav>
+          
+        {/* <nav
             className={stickyClass}
             ref={(elem) => {
                 this.nav = elem;
             }}
         >
-        
+      
         <div
             className="menu__item active from-top"
             onClick={(e) => this.scrollToPage('.about_gtp_content')}
@@ -69,7 +89,7 @@ render() {
             >
             Whats Next
         </div>
-    </nav>
+    </nav> */}
     </Sec>
     );
     }
