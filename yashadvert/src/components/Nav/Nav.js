@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
-import { toElement as scrollToElement } from '../../utils/scroll';
+import YashLogo from '../../assets/images/yash-logo.svg';
 import Sec from '../../hoc/Sec/Sec';
+import NavSub1 from './SubMenus/NavSub1';
+import NavSub2 from './SubMenus/NavSub2';
+import NavSub3 from './SubMenus/NavSub3';
+import NavSub4 from './SubMenus/NavSub4';
+import NavSub5 from './SubMenus/NavSub5';
+
+
 
 import './style.css';
 
@@ -34,11 +41,6 @@ class Nav extends Component {
     }
   }
 
-  scrollToPage(pageSelector) {
-    const nextPage = document.querySelector(pageSelector);
-    scrollToElement(nextPage);
-  }
-
 render() {
     const stickyClass = this.state.isSticky ? 'sticky' : '';
     
@@ -51,17 +53,27 @@ render() {
           }}
           role="navigation">
 
-  <div className="logo">Logo</div>
+  <div className="logo"><img src={YashLogo} width="105em"></img></div>
+  <div className="nav_items">
   <ul>
-    <li onClick="">Digital Transformation</li>
-    <li onClick="#">IT Outsourcing
-    
+    <li className="nav_li"><a href="#">Digital Transformation</a>
+    <NavSub1 />
     </li>
-    <li onClick="#">Technology</li>
-    <li onClick="#">Industries</li>
-    <li onClick="#">Resources</li>
-    <li onClick="#">Career</li>
+    <li className="nav_li"><a href="#">IT Outsourcing</a>
+          <NavSub2 />
+    </li>
+    <li className="nav_li"><a href="#">Technology</a>
+    <NavSub3 />
+    </li>
+    <li className="nav_li"><a href="#">Industries</a>
+    <NavSub4 />
+    </li>
+    <li className="nav_li"><a href="#">Resources</a>
+    <NavSub5 />
+    </li>
+    <li className="nav_li"><a href="#">Career</a></li>
   </ul>
+  </div>
 </nav>
           
         {/* <nav
