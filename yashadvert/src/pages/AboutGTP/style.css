@@ -5,13 +5,14 @@
 
 .title p::before
 {
+    font-size: 2em;
     content: '';
     height: .05em;
-    width: 1.5em;
+    width: 2.8em;
     background: #ac0f02;
     position: absolute;
-    left: -1.5em;
-    top: 2.15em;
+    left: -2.2em;
+    top: 2.2em;
 }
 
 .title
@@ -19,20 +20,22 @@
     /*have this bump left and the page wrapper be full-width*/
     line-height: 1.8;
     letter-spacing: 0.5px;
-    font-weight: 600;
     margin-bottom: 25px;
-    margin-left: 53px;
     color: #002e48;
     position: relative;
+    left: -2.5em;
+}
+
+.title p
+{
+    font-size: 10pt;
+    font-weight: 600;
 }
 
 .about_gtp_content {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
-    border: 1px solid black;
     margin-top: 10%;
-    padding-left: 10em;
-    padding-right: 10em;
     background-image: url(https://www.yash.com/wp-content/themes/Yash/images/ser-content-bg.png);
     background-repeat: no-repeat;
     background-position-x: right;
