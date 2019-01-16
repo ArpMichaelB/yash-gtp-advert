@@ -6,7 +6,7 @@ const WhatsNext = (props, context) => {
     
     return (
         <main className="whats_next_content">
-            <div className="title">Whats Next?</div>
+            <div className="title"><p>Whats Next?</p></div>
         </main>
     )
 }
