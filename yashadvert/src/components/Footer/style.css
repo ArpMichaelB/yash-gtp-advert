@@ -1,5 +1,20 @@
-footer {
-    padding: 0.5rem 0;
+.footer{
+    padding: 0 10%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
     text-align: center;
-    font-size: 0.625rem;
+    background: #dfdfdf;
+    margin-top: 10px;
+}
+
+.section{
+    text-align: left;
+    width: 25%;
+    display: inline-block;
+    margin: auto;
+}
+
+#section-1{
+    width: 50%;
 }
