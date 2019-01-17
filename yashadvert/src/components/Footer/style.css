@@ -98,3 +98,51 @@
     height: 1rem;
     margin: 0 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+    #lower-footer{
+        padding: 0 1em 1rem 1rem;
+    }
+
+    .footer{
+        padding: 3.5rem 0 1rem 0;
+    }
+
+    #text-box{
+        width: 8rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .lower-footer-third{
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .lower-footer-third table{
+        table-layout: fixed;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section{
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+    }
+
+    #lower-container{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+}
