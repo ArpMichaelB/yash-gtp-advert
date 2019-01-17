@@ -14,54 +14,87 @@ const WhatsNext = (props, context) => {
         <main className="whats_next_content">
 
             <span className="title"><p>Whats Next?</p></span>
+            <div class="contain">
+
+<h1>YASH Technologies Customer's</h1>
+
+<p>
+  YASH Technologies has a customer base of 200+ that we are constantly working with to improve and advance the Technological World.
+</p>
+
+<div class="row">
+  <div class="row__inner">
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={redLobster} alt=""  />
+      </div>
+      <div class="tile__details">
         
-<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-  <ol className="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-  </ol>
-
-  <div className="carousel-inner">
-
-  <div className="carousel-item active">
-      <img className="d-block w-100" src={redLobster} alt="Red Lobster"/>
+      </div>
     </div>
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={deltaDental} alt=""  />
+      </div>
+      <div class="tile__details">
+        
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={caterpillar} alt=""  />
+      </div>
+      <div class="tile__details">
+        
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={angloAmerican} alt=""  />
+      </div>
+      <div class="tile__details">
+        
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={johnDeere} alt=""  />
+      </div>
+      <div class="tile__details">
+        
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={polaris} alt=""  />
+      </div>
+      <div class="tile__details">
+        
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile__media">
+        <img class="tile__img" src={johnson} alt=""  />
+      </div>
+      <div class="tile__details">
+        
+      </div>
+    </div>
+
     
-    <div className="carousel-item">
-      <img className="d-block w-100" src={caterpillar} alt="Caterpillar"/>
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={polaris} alt="Polaris"/>
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={angloAmerican} alt="Anglo American"/>
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={johnDeere} alt="John Deere"/>
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={deltaDental} alt="Delta Dental"/>
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src={johnson} alt="Polaris"/>
-    </div>
+
   </div>
-  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="sr-only">Previous</span>
-  </a>
-  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="sr-only">Next</span>
-  </a>
 </div>
-  
->>>>>>> feat/WhatsNext
+
+</div>
+
         </main>
     )
 }
