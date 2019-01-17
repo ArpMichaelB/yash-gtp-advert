@@ -1,5 +1,100 @@
-footer {
-    padding: 0.5rem 0;
+.footer{
+    padding: 3.5rem 11rem 1rem 11rem;
+    width: 100%;
+    display: inline-flex;
+    box-sizing: border-box;
     text-align: center;
-    font-size: 0.625rem;
+    background: #dfdfdf;
+    margin-top: 10px;
+}
+
+#lower-footer{
+    background: #dfdfdf;
+    padding: 0 11em 1rem 11rem;
+    color: #00294c;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer h4{
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #001525;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+
+.section{
+    text-align: left;
+    width: 25%;
+    display: inline-block;
+}
+
+#section-1{
+    width: 50%;
+}
+
+.footer-table-row td{
+    width: 25%;
+    color: #00294c;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-table{
+    border-spacing: 0 1rem;
+}
+
+#submit-arrow{
+    display: inline-block;
+    background-color: black;
+    height: 34px;
+    width: 2.5rem;
+    color: white;
+    border: 0;
+}
+
+#text-box{
+    height: 30px;
+    width: 13rem;
+    padding-left: 5px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: #dfdfdf;
+}
+
+#line{
+    border-top: orange 1px solid;
+    margin-bottom: 1rem;
+}
+
+#newsletter-p{
+    font-size: 12px;
+    color: #292929;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: "segoeRegular";
+}
+
+.lower-footer-third{
+    width: 33%;
+    display: inline-block;
+}
+
+#lower-container{
+    display: inline-flex;
+    width: 100%;
+}
+
+.lower-footer-center{
+    text-align: center;
+}
+
+.icon{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 10px;
 }
