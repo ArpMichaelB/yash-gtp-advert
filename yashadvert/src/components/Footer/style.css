@@ -1,5 +1,5 @@
 .footer{
-    padding: 3rem 10rem 0 10rem;
+    padding: 3.5rem 11rem 1rem 11rem;
     width: 100%;
     display: inline-flex;
     box-sizing: border-box;
@@ -10,10 +10,10 @@
 
 #lower-footer{
     background: #dfdfdf;
-    padding: 1rem 10rem;
+    padding: 0 11em 1rem 11rem;
     color: #00294c;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 12px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -59,7 +59,42 @@
 
 #text-box{
     height: 30px;
-    width: 9rem;
+    width: 13rem;
+    padding-left: 5px;
     border: 1px solid black;
     display: inline-block;
+    background-color: #dfdfdf;
+}
+
+#line{
+    border-top: orange 1px solid;
+    margin-bottom: 1rem;
+}
+
+#newsletter-p{
+    font-size: 12px;
+    color: #292929;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: "segoeRegular";
+}
+
+.lower-footer-third{
+    width: 33%;
+    display: inline-block;
+}
+
+#lower-container{
+    display: inline-flex;
+    width: 100%;
+}
+
+.lower-footer-center{
+    text-align: center;
+}
+
+.icon{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 10px;
 }
