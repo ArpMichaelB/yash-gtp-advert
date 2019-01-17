@@ -14,6 +14,7 @@ const WhatsNext = (props, context) => {
         <main className="whats_next_content">
 
             <span className="title"><p>Whats Next?</p></span>
+
             <div class="contain">
 
 <h1>YASH Technologies Customer's</h1>
