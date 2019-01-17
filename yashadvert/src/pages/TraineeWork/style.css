@@ -44,7 +44,7 @@
 }
 
 .work_box_big img{
-    width: 12rem;
+    width: 100%;
     height: 10rem;
     margin: auto;
     display: block;
@@ -71,5 +71,7 @@
         width: 14rem;
     }
     
-    
+    .work_box_big img{
+        width: 12rem;
+    }
 }

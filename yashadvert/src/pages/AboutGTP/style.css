@@ -41,6 +41,7 @@
     background-position-x: right;
     background-position-y: top;
     background-size: contain;
+    text-shadow:-1px -1px 0 #fefefe,1px -1px 0 #fefefe,-1px 1px 0 #fefefe,1px 1px 0 #fefefe;
 }
 
 .about_gtp_heading
