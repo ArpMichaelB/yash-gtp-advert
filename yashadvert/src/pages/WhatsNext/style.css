@@ -11,20 +11,11 @@
     flex-flow: column wrap;
 }
 
-
-
-a:link,
-a:hover,
-a:active,
-a:visited {
-  transition: color 150ms;
-  color: #95a5a6;
-  text-decoration: none;
+.titleC {
+    color: #002e48;
+    
 }
-a:hover {
-  color: #7f8c8d;
-  text-decoration: underline;
-}
+
 .contain {
   width: 100%;
 }
@@ -75,9 +66,6 @@ a:hover {
 
   z-index: 2;
 }
-.tile:hover .tile__details {
-  opacity: 0.3;
-}
 
 .row__inner:hover {
   transform: translate3d(-62.5px, 0, 0);
@@ -91,4 +79,7 @@ a:hover {
 }
 .tile:hover ~ .tile {
   transform: translate3d(125px, 0, 0);
+
 }
+
+

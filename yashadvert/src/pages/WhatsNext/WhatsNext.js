@@ -14,13 +14,13 @@ const WhatsNext = (props, context) => {
         <main className="whats_next_content">
 
             <span className="title"><p>Whats Next?</p></span>
-        
+
             <div class="contain">
 
-<h1>YASH Technologies Customer's</h1>
+<h1 className="titleC">Clients</h1>
 
 <p>
-  YASH Technologies has a customer base of 200+ that we are constantly working with to improve and advance the Technological World.
+  YASH Technologies has a client base of 200+ that we are constantly working with to improve and advance the technological world.
 </p>
 
 <div class="row">
@@ -28,7 +28,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={redLobster} alt=""  />
+        <img class="tile__img" src={redLobster} alt="Red Lobster"  />
       </div>
       <div class="tile__details">
         
@@ -37,7 +37,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={deltaDental} alt=""  />
+        <img class="tile__img" src={deltaDental} alt="Delta Dental"  />
       </div>
       <div class="tile__details">
         
@@ -46,7 +46,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={caterpillar} alt=""  />
+        <img class="tile__img" src={caterpillar} alt="Caterpillar"  />
       </div>
       <div class="tile__details">
         
@@ -55,7 +55,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={angloAmerican} alt=""  />
+        <img class="tile__img" src={angloAmerican} alt="Anglo American"  />
       </div>
       <div class="tile__details">
         
@@ -64,7 +64,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={johnDeere} alt=""  />
+        <img class="tile__img" src={johnDeere} alt="John Deere"  />
       </div>
       <div class="tile__details">
         
@@ -73,7 +73,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={polaris} alt=""  />
+        <img class="tile__img" src={polaris} alt="Polaris"  />
       </div>
       <div class="tile__details">
         
@@ -82,7 +82,7 @@ const WhatsNext = (props, context) => {
 
     <div class="tile">
       <div class="tile__media">
-        <img class="tile__img" src={johnson} alt=""  />
+        <img class="tile__img" src={johnson} alt="JohnsonAndJohnson"  />
       </div>
       <div class="tile__details">
         
@@ -95,7 +95,7 @@ const WhatsNext = (props, context) => {
 </div>
 
 </div>
-  
+
         </main>
     )
 }
