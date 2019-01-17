@@ -32,5 +32,4 @@ target/
 gradlew
 build/
 yashadvert/node_modules
-package.json
-package-lock.json
+yashadvert/package-lock.json
