@@ -1,0 +1,77 @@
+/* Custom CSS For TraineeWork Section */
+
+/* Author:  */
+
+
+.trainee_work_content {
+    width: 80vw;
+    margin-top: 10%;
+}
+
+.work_box, .work_box_big {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 12rem;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.work_box:active, .work_box_big:active{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(4px);
+}
+
+.work_box img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.work_box p{
+    display: none;
+}
+
+.work_box_big {
+    width: 50%;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+    min-height: 25vh;
+    padding: 5px;
+    height:auto;
+}
+
+.work_box_big img{
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.work_box_big p{
+    display: inline;
+}
+
+.work_box:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.work_box_big:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 480px) {
+    .work_box {
+        box-sizing: inherit;
+        margin: 12px;
+        width: 14rem;
+    }
+    
+    .work_box_big img{
+        width: 12rem;
+    }
+}

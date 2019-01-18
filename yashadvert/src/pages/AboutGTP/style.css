@@ -1,0 +1,38 @@
+/* Custom CSS For AboutGTP Section */
+
+/* Author:  */
+
+.about_gtp_content {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin-top: 10%;
+    background-image: url(https://www.yash.com/wp-content/themes/Yash/images/ser-content-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: contain;
+    text-shadow:-1px -1px 0 #fefefe,1px -1px 0 #fefefe,-1px 1px 0 #fefefe,1px 1px 0 #fefefe;
+}
+
+.about_gtp_heading
+{
+    color: #002e48;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform:uppercase;
+}
+
+.about_gtp_list, .about_gtp_paragraph
+{
+    color: #3e6174;
+    text-align: left;
+    line-height:1.8;
+}
+
+.about_gtp_list ul li
+{
+    list-style-type: none;
+    background-image: url(https://www.yash.com/wp-content/themes/Yash/images/ser-list-img.png);
+    background-repeat: no-repeat;
+    padding-left: 1.5em;
+}

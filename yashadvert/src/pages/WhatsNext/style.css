@@ -1,0 +1,124 @@
+/* Custom CSS For WhatsNext Section */
+
+/* Author:  */
+
+
+.whats_next_content {
+    height: 100vh;
+    
+    margin-top: 10%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.titleC {
+    color: #002e48;
+    
+}
+
+.contain {
+  width: 100%;
+}
+.row {
+  overflow: hidden;
+  width: auto;
+  padding-left: 50px;
+  
+}
+.row__inner {
+  transition: 450ms transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70.3125px 0;
+  padding-bottom: 10px;
+
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: right;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: move;
+  -moz-animation-duration: 30s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: right;
+  -moz-animation-timing-function: linear;
+
+  
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 199px;
+  height: 199px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+ 
+}
+.tile__img {
+  width: 199px;
+  height: 199px;
+  object-fit: cover;
+  
+  
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  transition: 450ms opacity;
+}
+
+
+.tile__details:before {
+  left: 0;
+  width: 100%;
+
+  z-index: 2;
+}
+
+.row__inner:hover {
+  transform: translate3d(-62.5px, 0, 0);
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+}
+.row__inner:hover .tile {
+  opacity: 0.3;
+  
+}
+.row__inner:hover .tile:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  transform: translate3d(125px, 0, 0);
+
+}
+
+@-webkit-keyframes move {
+    0% {
+        margin-left: -2500px;
+    }
+    100% {
+        margin-left: 1100px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        margin-left: -2500px;
+    }
+    100% {
+        margin-left: 1100px;
+    }
+}
+
+
