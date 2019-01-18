@@ -1,43 +1,181 @@
 nav {
-    position: fixed;
-    display: inline-flex;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    left: 0;
-    border-width: 0 0 1px;
-    z-index: 1030;
-    min-height: 50px;
-    margin-bottom: 20px;
-    padding-top: 7px;
-    padding-bottom: 4px;
-    transition: 0.7s;
-    border: 1px solid transparent;
-    background: #FFF;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+  position: fixed;
+  display: inline-flex;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-width: 0 0 1px;
+  z-index: 1030;
+  min-height: 50px;
+  margin-bottom: 20px;
+  padding-top: 7px;
+  padding-bottom: 4px;
+  transition: 0.7s;
+  border: 1px solid transparent;
+  background: #FFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .nav_items {
-    width: 83.33333333%;
+  width: 83.33333333%;
 }
 
 .logo {
-    width: 16.66666667%;
+  width: 97%;
+  padding-left: 10px;
 }
 
 a {
-    text-decoration: none;
-  }
-  
-  ul {
-      list-style: none;
-      margin: 0;
-      padding-left: 0;
-  }
-  
+  text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
 
 .nav_li {
+  font-family: 'Montserrat';
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding: 1rem;
+    position: relative;
+    font-weight: 300;
+    text-decoration: none;
+  transition-duration: 0.5s;
+  letter-spacing: 0.5px;
+  bottom: .22em;
+}
+
+.nav_li a {
+  color: #002e48;
+}
+
+.nav_li_sub {
+  font-family: 'Montserrat';
+    display: block;
+    float: left;
+    font-size: 11px;
+    padding: .8em;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+  background: #fff;
+  margin: 5px;
+  height: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    background: #fff;
+    visibility: hidden;
+  opacity: 0;
+  width: 35rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: -85%;
+  display: none;
+  border-bottom: 3px solid #af372c;
+  padding-bottom: 1.2em;
+
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+
+.sub_head {
+    text-align: center;
+    padding: 5px;
+}
+
+.sub_head:before {
+  font-size: 2em;
+  content: '';
+  height: .05em;
+  width:6em;
+  background:#000;
+  position: absolute;
+  left: .5em;
+  top: 2.8em;
+}
+
+.sub_head:after {
+  font-size: 2em;
+  content: '';
+  height: .05em;
+  width: 6em;
+  background: #000;
+  position: absolute;
+  left: 13.5em;
+  top: 2.8em;
+}
+
+  nav .navWide {
+    display: none;
+    margin: 0 auto;
+
+  }
+  nav .navWide .wideDiv {
+    text-align: center;
+  }
+  nav .navWide .wideDiv a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 2em;
+  }
+  nav .navNarrow i {
+    float: left;
+    cursor: pointer;
+    color: #000;
+  }
+  nav .navNarrow .narrowLinks {
+    display: none;
+  }
+  nav .navNarrow .narrowLinks a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5em 0;
+  }
+  @media (min-width: 960px) {
+    nav .navWide {
+      display: block;
+    }
+    nav .navNarrow {
+      display: none;
+    }
+
+    .logo {
+      padding-left: 10px;
+      width: 16.66666667%;
+  }
+
+  .nav_li_sub {
+    flex: 1 0 30%;
+  }
+
+  .nav_li {
     font-family: 'Montserrat';
       display: block;
       float: left;
@@ -49,88 +187,11 @@ a {
     transition-duration: 0.5s;
     letter-spacing: 0.5px;
     bottom: .22em;
-}
-
-.nav_li a {
-    color: #002e48;
-}
-
-.nav_li_sub {
-    font-family: 'Montserrat';
-      display: block;
-      float: left;
-      font-size: 11px;
-      padding: .8em;
-      position: relative;
-      text-decoration: none;
-    transition-duration: 0.5s;
-    background: #fff;
-    flex: 1 0 30%;
-    margin: 5px;
-    height: 5px;
-}
-
-  li:hover {
-      cursor: pointer;
   }
   
-  ul li ul {
-      background: #fff;
-      visibility: hidden;
-    opacity: 0;
-    width: 35rem;
-      position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-      left: -85%;
-    display: none;
-    border-bottom: 3px solid #af372c;
-    padding-bottom: 1.2em;
-
-  }
-  
-  ul li:hover > ul,
-  ul li:focus-within > ul, /* this is the line we add */
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  ul li ul li {
-      clear: both;
-    width: 100%;
   }
 
-  .sub_head {
-      text-align: center;
-      padding: 5px;
-  }
-
-  .sub_head:before {
-    font-size: 2em;
-    content: '';
-    height: .05em;
-    width:6em;
-    background:#000;
-    position: absolute;
-    left: .5em;
-    top: 2.8em;
-  }
-
-  .sub_head:after {
-    font-size: 2em;
-    content: '';
-    height: .05em;
-    width: 6em;
-    background: #000;
-    position: absolute;
-    left: 13.5em;
-    top: 2.8em;
-  }
-
-  .logo {
-      padding-left: 10px;
+  .burger_icon {
+    padding-right: .5em;
   }
   
