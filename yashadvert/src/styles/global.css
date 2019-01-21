@@ -57,7 +57,7 @@ h1 {
     background: #ac0f02;
     position: absolute;
     left: -2.2em;
-    top: 1.5em;
+    top: 1em;
 }
 
 .title
@@ -76,6 +76,7 @@ h1 {
 {
     font-size: 10pt;
     font-weight: 600;
+    margin-bottom: 1em;
 }
 
 @media (min-width: 320px){
