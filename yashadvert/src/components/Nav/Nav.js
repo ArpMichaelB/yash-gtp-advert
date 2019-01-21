@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
-import { toElement as scrollToElement } from '../../utils/scroll';
+import YashLogo from '../../assets/images/yash-logo.svg';
 import Sec from '../../hoc/Sec/Sec';
+import NavSub1 from './SubMenus/NavSub1';
+import NavSub2 from './SubMenus/NavSub2';
+import NavSub3 from './SubMenus/NavSub3';
+import NavSub4 from './SubMenus/NavSub4';
+import NavSub5 from './SubMenus/NavSub5';
+import NavSub6 from './SubMenus/NavSub6';
+
+
 
 import './style.css';
 
@@ -8,11 +16,22 @@ import './style.css';
 class Nav extends Component {
   constructor(props) {
     super(props);
+
     this.handleScroll = this.handleScroll.bind(this);
     this.state = {
       isSticky: false
     };
   }
+
+  burgerToggle() {
+    let linksEl = document.querySelector('.narrowLinks');
+		if (linksEl.style.display === 'block') {
+			linksEl.style.display = 'none';
+		} else {
+			linksEl.style.display = 'block';
+		}
+	}
+
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -34,43 +53,71 @@ class Nav extends Component {
     }
   }
 
-  scrollToPage(pageSelector) {
-    const nextPage = document.querySelector(pageSelector);
-    scrollToElement(nextPage);
-  }
-
 render() {
     const stickyClass = this.state.isSticky ? 'sticky' : '';
     
     return (
         <Sec>
-        <nav
-            className={stickyClass}
-            ref={(elem) => {
-                this.nav = elem;
-            }}
-        >
-        
-        <div
-            className="menu__item active from-top"
-            onClick={(e) => this.scrollToPage('.about_gtp_content')}
-            >
-            About GTP
-        </div>
-        <div
-            className="menu__item from-top"
-            onClick={(e) => this.scrollToPage('.trainee_work_content')}
-            >
-            Trainee Work
-        </div>
-        <div
-            className="menu__item from-top"
-            onClick={(e) => this.scrollToPage('.whats_next_content')}
-            >
-            Whats Next
-        </div>
-    </nav>
+          <nav 
+          className={stickyClass}
+          ref={(elem) => {
+              this.nav = elem;
+          }}
+          role="navigation">
+
+  <div className="logo"><img src={YashLogo} width="130em"></img></div>
+  <div className="nav_items navWide">
+  <ul>
+    <li className="nav_li" ><a href="https://www.yash.com/digital-transformation/">Digital Transformation</a><i class="fas fa-angle-down arrow"></i>
+    <NavSub1 />
+    </li>
+    <li className="nav_li"><a href="https://www.yash.com/it-outsourcing/">IT Outsourcing</a><i class="fas fa-angle-down arrow"></i>
+          <NavSub2 />
+    </li>
+    <li className="nav_li">Technology<i class="fas fa-angle-down arrow"></i>
+    <NavSub3 />
+    </li>
+    <li className="nav_li">Industries<i class="fas fa-angle-down arrow"></i>
+    <NavSub4 />
+    </li>
+    <li className="nav_li"><a href="https://www.yash.com/news-room/">Resources</a><i class="fas fa-angle-down arrow"></i>
+    <NavSub5 />
+    </li>
+    <li className="nav_li"><a href="https://www.yash.com/career/">Career</a><i class="fas fa-angle-down arrow"></i>
+    <NavSub6 />
+    </li>
+  </ul>
+  </div>
+
+  <div className="navNarrow">
+					<i className="fa fa-bars fa-2x burger_icon" onClick={this.burgerToggle}></i>
+					<div className="narrowLinks">
+          <ul>
+    <li className="nav_li"><a href="#">Digital Transformation</a>
+    <NavSub1 />
+    </li>
+    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>IT Outsourcing</a>
+          <NavSub2 />
+    </li>
+    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Technology</a>
+    <NavSub3 />
+    </li>
+    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Industries</a>
+    <NavSub4 />
+    </li>
+    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Resources</a>
+    <NavSub5 />
+    </li>
+    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Career</a>
+    <NavSub6 />
+    </li>
+  </ul>
+					</div>
+				</div>
+</nav>
+          
     </Sec>
+    
     );
     }
 
