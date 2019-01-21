@@ -27,6 +27,11 @@ nav {
   padding-left: 10px;
 }
 
+.arrow {
+  padding-left: 7px;
+  vertical-align: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -37,19 +42,28 @@ ul {
     padding-left: 0;
 }
 
+.dropdown {
+  width: 20em;
+  position: relative;
+}
+li.nav_li_sub {
+  word-wrap: break-word;
+}
+  
 
 .nav_li {
   font-family: 'Montserrat';
     display: block;
     float: left;
-    font-size: 14px;
+    width: 100%;
+    font-size: 17px;
     padding: 1rem;
     position: relative;
     font-weight: 300;
     text-decoration: none;
   transition-duration: 0.5s;
   letter-spacing: 0.5px;
-  bottom: .22em;
+  top: .13em;
 }
 
 .nav_li a {
@@ -60,7 +74,7 @@ ul {
   font-family: 'Montserrat';
     display: block;
     float: left;
-    font-size: 11px;
+    font-size: 14px;
     padding: .8em;
     position: relative;
     text-decoration: none;
@@ -82,7 +96,6 @@ ul li ul {
     position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
-    left: -85%;
   display: none;
   border-bottom: 3px solid #af372c;
   padding-bottom: 1.2em;
@@ -104,32 +117,9 @@ ul li ul li {
 }
 
 .sub_head {
-    text-align: center;
-    padding: 5px;
+    text-align: left;
+    padding: .8em;
 }
-
-.sub_head:before {
-  font-size: 2em;
-  content: '';
-  height: .05em;
-  width:6em;
-  background:#000;
-  position: absolute;
-  left: .5em;
-  top: 2.8em;
-}
-
-.sub_head:after {
-  font-size: 2em;
-  content: '';
-  height: .05em;
-  width: 6em;
-  background: #000;
-  position: absolute;
-  left: 13.5em;
-  top: 2.8em;
-}
-
   nav .navWide {
     display: none;
     margin: 0 auto;
@@ -144,7 +134,7 @@ ul li ul li {
     padding: 0 2em;
   }
   nav .navNarrow i {
-    float: left;
+    float: right;
     cursor: pointer;
     color: #000;
   }
@@ -154,11 +144,9 @@ ul li ul li {
   nav .navNarrow .narrowLinks a {
     text-decoration: none;
     display: block;
-    float: left;
-    clear: left;
     padding: 0.5em 0;
   }
-  @media (min-width: 960px) {
+  @media (min-width: 1280px) {
     nav .navWide {
       display: block;
     }
@@ -167,7 +155,7 @@ ul li ul li {
     }
 
     .logo {
-      padding-left: 10px;
+      padding-left: 13px;
       width: 16.66666667%;
   }
 
@@ -179,7 +167,7 @@ ul li ul li {
     font-family: 'Montserrat';
       display: block;
       float: left;
-      font-size: 14px;
+      font-size: 17px;
       padding: 1rem;
       position: relative;
       font-weight: 300;
@@ -187,11 +175,28 @@ ul li ul li {
     transition-duration: 0.5s;
     letter-spacing: 0.5px;
     bottom: .22em;
+    width: auto;
   }
+
+  nav .navNarrow .narrowLinks a {
+    float: left;
+    clear: left;
+    
+  }
+
+  .dropdown {
+    width: 40em;
+    position: absolute;
+  }
+
+  ul li ul {
+    left: -85%;
+}
   
   }
 
   .burger_icon {
     padding-right: .5em;
   }
+
   

@@ -9,8 +9,9 @@
   }
 
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-	font-family: 'Arial', sans-serif;
-	font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
  
 h1 {
@@ -34,7 +35,7 @@ h1 {
 }
 
 .title {
-  font-family: 'FjallaOne', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 4rem;
@@ -60,7 +61,8 @@ h1 {
     /*have this bump left and the page wrapper be full-width*/
     line-height: 1.8;
     letter-spacing: 0.5px;
-    margin-bottom: 25px;
+    margin-bottom: 1em;
+    margin-top: 3em;
     color: #002e48;
     position: relative;
     left: -2.5em;

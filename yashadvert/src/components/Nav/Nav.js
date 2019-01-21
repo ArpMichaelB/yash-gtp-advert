@@ -6,6 +6,7 @@ import NavSub2 from './SubMenus/NavSub2';
 import NavSub3 from './SubMenus/NavSub3';
 import NavSub4 from './SubMenus/NavSub4';
 import NavSub5 from './SubMenus/NavSub5';
+import NavSub6 from './SubMenus/NavSub6';
 
 
 
@@ -15,9 +16,7 @@ import './style.css';
 class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isExpanded: false
-    };
+
     this.handleScroll = this.handleScroll.bind(this);
     this.state = {
       isSticky: false
@@ -66,25 +65,27 @@ render() {
           }}
           role="navigation">
 
-  <div className="logo"><img src={YashLogo} width="105em"></img></div>
+  <div className="logo"><img src={YashLogo} width="130em"></img></div>
   <div className="nav_items navWide">
   <ul>
-    <li className="nav_li"><a href="#">Digital Transformation</a>
+    <li className="nav_li" ><a href="https://www.yash.com/digital-transformation/">Digital Transformation</a><i class="fas fa-angle-down arrow"></i>
     <NavSub1 />
     </li>
-    <li className="nav_li"><a href="#">IT Outsourcing</a>
+    <li className="nav_li"><a href="https://www.yash.com/it-outsourcing/">IT Outsourcing</a><i class="fas fa-angle-down arrow"></i>
           <NavSub2 />
     </li>
-    <li className="nav_li"><a href="#">Technology</a>
+    <li className="nav_li">Technology<i class="fas fa-angle-down arrow"></i>
     <NavSub3 />
     </li>
-    <li className="nav_li"><a href="#">Industries</a>
+    <li className="nav_li">Industries<i class="fas fa-angle-down arrow"></i>
     <NavSub4 />
     </li>
-    <li className="nav_li"><a href="#">Resources</a>
+    <li className="nav_li"><a href="https://www.yash.com/news-room/">Resources</a><i class="fas fa-angle-down arrow"></i>
     <NavSub5 />
     </li>
-    <li className="nav_li"><a href="#">Career</a></li>
+    <li className="nav_li"><a href="https://www.yash.com/career/">Career</a><i class="fas fa-angle-down arrow"></i>
+    <NavSub6 />
+    </li>
   </ul>
   </div>
 
@@ -107,7 +108,9 @@ render() {
     <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Resources</a>
     <NavSub5 />
     </li>
-    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Career</a></li>
+    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Career</a>
+    <NavSub6 />
+    </li>
   </ul>
 					</div>
 				</div>
