@@ -48,8 +48,8 @@ ul {
 }
 
 .dropdown_two {
-  width: 30em;
-  position: absolute;
+  width: 20em;
+  position: relative;
 }
 
 li.nav_li_sub {
@@ -198,6 +198,7 @@ ul li ul li {
 
   .dropdown_two {
     width: 37em;
+    position: absolute;
     margin-left: -20em;
   }
 
