@@ -65,25 +65,25 @@ render() {
           }}
           role="navigation">
 
-  <div className="logo"><img src={YashLogo} width="130em"></img></div>
+  <div className="logo"><img src={YashLogo} width="130em" alt="yash-logo"></img></div>
   <div className="nav_items navWide">
   <ul>
-    <li className="nav_li" ><a href="https://www.yash.com/digital-transformation/">Digital Transformation</a><i class="fas fa-angle-down arrow"></i>
+    <li className="nav_li" ><a href="https://www.yash.com/digital-transformation/">Digital Transformation</a><i className="fas fa-angle-down arrow"></i>
     <NavSub1 />
     </li>
-    <li className="nav_li"><a href="https://www.yash.com/it-outsourcing/">IT Outsourcing</a><i class="fas fa-angle-down arrow"></i>
+    <li className="nav_li"><a href="https://www.yash.com/it-outsourcing/">IT Outsourcing</a><i className="fas fa-angle-down arrow"></i>
           <NavSub2 />
     </li>
-    <li className="nav_li">Technology<i class="fas fa-angle-down arrow"></i>
+    <li className="nav_li">Technology<i className="fas fa-angle-down arrow"></i>
     <NavSub3 />
     </li>
-    <li className="nav_li">Industries<i class="fas fa-angle-down arrow"></i>
+    <li className="nav_li">Industries<i className="fas fa-angle-down arrow"></i>
     <NavSub4 />
     </li>
-    <li className="nav_li"><a href="https://www.yash.com/news-room/">Resources</a><i class="fas fa-angle-down arrow"></i>
+    <li className="nav_li"><a href="https://www.yash.com/news-room/">Resources</a><i className="fas fa-angle-down arrow"></i>
     <NavSub5 />
     </li>
-    <li className="nav_li"><a href="https://www.yash.com/career/">Career</a><i class="fas fa-angle-down arrow"></i>
+    <li className="nav_li"><a href="https://www.yash.com/career/">Career</a><i className="fas fa-angle-down arrow"></i>
     <NavSub6 />
     </li>
   </ul>
@@ -93,22 +93,22 @@ render() {
 					<i className="fa fa-bars fa-2x burger_icon" onClick={this.burgerToggle}></i>
 					<div className="narrowLinks">
           <ul>
-    <li className="nav_li"><a href="#">Digital Transformation</a>
+    <li className="nav_li"><a href="https://www.yash.com/digital-transformation/">Digital Transformation</a>
     <NavSub1 />
     </li>
-    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>IT Outsourcing</a>
+    <li className="nav_li"><a href="https://www.yash.com/it-outsourcing/" onClick={this.burgerToggle}>IT Outsourcing</a>
           <NavSub2 />
     </li>
-    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Technology</a>
+    <li className="nav_li" onClick={this.burgerToggle} >Technology
     <NavSub3 />
     </li>
-    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Industries</a>
+    <li className="nav_li" onClick={this.burgerToggle}>Industries
     <NavSub4 />
     </li>
-    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Resources</a>
+    <li className="nav_li"><a href="https://www.yash.com/news-room/" onClick={this.burgerToggle}>Resources</a>
     <NavSub5 />
     </li>
-    <li className="nav_li"><a href="#" onClick={this.burgerToggle}>Career</a>
+    <li className="nav_li"><a href="https://www.yash.com/career/" onClick={this.burgerToggle}>Career</a>
     <NavSub6 />
     </li>
   </ul>

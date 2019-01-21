@@ -46,6 +46,12 @@ ul {
   width: 20em;
   position: relative;
 }
+
+.dropdown_two {
+  width: 30em;
+  position: absolute;
+}
+
 li.nav_li_sub {
   word-wrap: break-word;
 }
@@ -74,7 +80,7 @@ li.nav_li_sub {
   font-family: 'Montserrat';
     display: block;
     float: left;
-    font-size: 14px;
+    font-size: 13px;
     padding: .8em;
     position: relative;
     text-decoration: none;
@@ -185,8 +191,14 @@ ul li ul li {
   }
 
   .dropdown {
-    width: 40em;
+    width: 37em;
     position: absolute;
+    margin-right: 40%;
+  }
+
+  .dropdown_two {
+    width: 37em;
+    margin-left: -20em;
   }
 
   ul li ul {
