@@ -88,6 +88,18 @@ h1 {
     }
 }
 
+@media (min-width: 500px){
+  .title p::before
+    {
+      left: -2.2em;
+    }
+
+  .title
+    {
+      left: -0.5em;
+    }
+}
+
 @media (min-width: 768px) {
   .title p::before
   {
@@ -120,7 +132,7 @@ h1 {
 
 .title
   {
-    left: -2em;
+    left: -1.5em;
   }
 }
 
@@ -144,7 +156,7 @@ h1 {
 
 .title
   {
-    left: -1.7em;
+    left: -2.2em;
   }
 }
 
@@ -155,6 +167,6 @@ h1 {
 }
   .title
   {
-      left: -2.7em;
+      left: -2.8em;
   }
 }
