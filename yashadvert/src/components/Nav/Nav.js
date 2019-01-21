@@ -74,10 +74,10 @@ render() {
     <li className="nav_li"><a href="https://www.yash.com/it-outsourcing/">IT Outsourcing</a><i className="fas fa-angle-down arrow"></i>
           <NavSub2 />
     </li>
-    <li className="nav_li">Technology<i className="fas fa-angle-down arrow"></i>
+    <li className="nav_li"><a href="#0">Technology</a><i className="fas fa-angle-down arrow"></i>
     <NavSub3 />
     </li>
-    <li className="nav_li">Industries<i className="fas fa-angle-down arrow"></i>
+    <li className="nav_li"><a href="#0">Industries</a><i className="fas fa-angle-down arrow"></i>
     <NavSub4 />
     </li>
     <li className="nav_li"><a href="https://www.yash.com/news-room/">Resources</a><i className="fas fa-angle-down arrow"></i>

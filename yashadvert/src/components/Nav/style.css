@@ -45,11 +45,15 @@ ul {
 .dropdown {
   width: 20em;
   position: relative;
+  max-height: 340px;
+  overflow-y: auto;
 }
 
 .dropdown_two {
   width: 20em;
   position: relative;
+  max-height: 340px;
+  overflow-y: auto;
 }
 
 li.nav_li_sub {
