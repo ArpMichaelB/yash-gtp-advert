@@ -5,7 +5,7 @@ import './../style.css';
 class Submenu extends Component {
     render() {
       return (
-        <ul className="dropdown">
+        <ul className="dropdown_two">
         <li className="nav_li_sub"><a href="https://www.yash.com/industries/automotive/">Automotive</a></li>
         <li className="nav_li_sub"><a href="https://www.yash.com/industries/bfsi/">BFSI</a></li>
         <li className="nav_li_sub"><a href="https://www.yash.com/industries/chemicals/">Chemicals</a></li>

@@ -11,14 +11,15 @@ class Submenu extends Component {
   }
     render() {
       return (
-        <ul className="dropdown">
+        <ul className="dropdown_two">
         <li><div className="sub_head">Graduate Training Program:</div></li>
-        <li className="nav_li_sub" onClick={(e) => this.scrollToPage('.about_gtp_content')}><a
-            >About Graduate Training Program</a></li>
-        <li className="nav_li_sub" onClick={(e) => this.scrollToPage('.trainee_work_content')}><a
-            >Trainee Work</a></li>
-        <li className="nav_li_sub" onClick={(e) => this.scrollToPage('.whats_next_content')}><a
-            >Whats Next?</a></li>
+        <li className="nav_li_sub" onClick={(e) => this.scrollToPage('.about_gtp_content')}>
+        About Graduate Training Program
+        </li>
+        <li className="nav_li_sub" onClick={(e) => this.scrollToPage('.trainee_work_content')}>
+        Trainee Work</li>
+        <li className="nav_li_sub" onClick={(e) => this.scrollToPage('.whats_next_content')}>
+        Whats Next?</li>
       </ul>
       )
     }
