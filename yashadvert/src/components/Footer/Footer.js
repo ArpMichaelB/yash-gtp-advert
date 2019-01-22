@@ -17,28 +17,28 @@ const Footer = (props, context) => {
                 <table className="footer-table">
                     <tbody>
                         <tr className="footer-table-row">
-                            <td>Digital Transformation</td>
-                            <td>Big Data</td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/digital-transformation/">Digital Transformation</a></td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/digital-transformation/big-data/">Big Data</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>Data Sciences And Analytics</td>
-                            <td>Cloud Services</td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/digital-transformation/analytics/">Data Sciences And Analytics</a></td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/digital-transformation/cloud/">Cloud Service</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>Mobility Services</td>
-                            <td>Managed Services</td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/digital-transformation/mobility-services/">Mobility Services</a></td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/it-outsourcing/managed-services/">Managed Services</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>Testing Services</td>
-                            <td>Infrastructure Services</td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/it-outsourcing/testing/">Testing Services</a></td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/it-outsourcing/infrastructure-management/infrastructure-services/">Infrastructure Services</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>Strategic Consulting</td>
-                            <td>Enterprise Modernization</td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/it-outsourcing/strategic-consulting/">Strategic Consulting</a></td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/it-outsourcing/application-services/enterprise-modernization/">Enterprise Modernization</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>SAP S/4HANA Cloud</td>
-                            <td>Office 365</td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/technology/sap/cloud-erp/sap-s4-hana/">SAP S/4HANA Cloud</a></td>
+                            <td className="footer-table-data"><a href="https://www.yash.com/technology/microsoft/application/office-365/">Office 365</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -48,19 +48,19 @@ const Footer = (props, context) => {
                 <table className="footer-table">
                     <tbody>
                         <tr className="footer-table-row">
-                            <td>ITPM Consulting</td>
+                            <td className="footer-table-data"><a href="http://www.itpmconsulting.com/">ITPM Consulting</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>SoltiusME</td>
+                            <td className="footer-table-data"><a href="http://www.soltiusme.com/home/">SoltiusME</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>Aaseya IT Services Pvt. Ltd.</td>
+                            <td className="footer-table-data"><a href="http://www.aaseya.com/">Aaseya IT Services Pvt. Ltd.</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>Codiant Technologies</td>
+                            <td className="footer-table-data"><a href="http://www.codiant.com/">Codiant Technologies</a></td>
                         </tr>
                         <tr className="footer-table-row">
-                            <td>c5mi</td>
+                            <td className="footer-table-data"><a href="http://www.c5mi.com/">c5mi</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -87,12 +87,13 @@ const Footer = (props, context) => {
                     </table>
                 </div>
                 <div className="lower-footer-third lower-footer-center">
-                    CSR / Sitemap / Legal / Privacy policy
+                <a href="https://www.yash.com/corporate-social-responsibility/">CSR</a> / <a href="https://www.yash.com/site-map/">Sitemap</a> / 
+                <a href="https://www.yash.com/legal/">Legal</a> / <a href="https://www.yash.com/privacy-policy/">Privacy policy</a>
                 </div>
                 <div className="lower-footer-third lower-footer-center">
-                    <img className="icon" src={facebook} alt="Facebook Icon" />
-                    <img className="icon" src={twitter} alt="Twitter Icon" />
-                    <img className="icon" src={linkedin} alt="LinkedIn Icon" />
+                    <a href="https://www.facebook.com/YASHCorporate"><img className="icon" src={facebook} alt="Facebook Icon" /></a>
+                    <a href="https://twitter.com/YASH_Tech"><img className="icon" src={twitter} alt="Twitter Icon" /></a>
+                    <a href="https://www.linkedin.com/company/yash-technologies/"><img className="icon" src={linkedin} alt="LinkedIn Icon" /></a>
                 </div>
             </div>
         </div>

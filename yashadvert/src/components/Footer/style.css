@@ -8,6 +8,10 @@
     margin-top: 10px;
 }
 
+html{
+    padding:0;
+}
+
 #lower-footer{
     background: #dfdfdf;
     padding: 0 11em 1rem 11rem;
@@ -15,6 +19,14 @@
     font-weight: 700;
     font-size: 12px;
     font-family: 'Lato', sans-serif;
+}
+
+#lower-footer a{
+    color: #00294c;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
 }
 
 .footer h4{
@@ -38,10 +50,14 @@
 
 .footer-table-row td{
     width: 25%;
+}
+
+.footer-table-data a{
     color: #00294c;
     font-weight: 600;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 
 .footer-table{
